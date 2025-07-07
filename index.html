@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filefy v.1.0</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #111;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.9) 100%);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .download-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card {
+            background: white;
+            border: 1px solid rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .footer {
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="hero py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl font-bold mb-4">Filefy v.1.0</h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Very easy Tool to Share and Store Files.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 pb-12 pt-6">
+        <div class="max-w-6xl mx-auto">
+            <!-- App Screenshot -->
+            
+            <!-- Download Section -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-6">Download Filefy v.1.0</h2>
+                <button 
+                    onclick="window.location.href='/files/Filefy v.1.0.exe'"
+                    class="download-btn bg-black text-white px-8 py-4 rounded-lg text-lg font-medium inline-block"
+                >
+                    Download
+                </button>
+                <p class="mt-4 text-gray-500">Version 1.0 | 42 MB | Windows 10/11</p>
+            </div>
+            
+            <!-- Features -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="text-4xl mb-4">📁</div>
+                    <h3 class="text-xl font-semibold mb-2">File Uploading</h3>
+                    <p class="text-gray-600">
+                        Very Fast and Easy.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold mb-2">100% Server Uptime</h3>
+                    <p class="text-gray-600">
+                        Server doesn´t Stop And You Can Have Acces To Your Files Any Time.
+                    </p>
+                </div>
+                
+                <div class="feature-card p-6 rounded-xl">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-semibold mb-2">Secure</h3>
+                    <p class="text-gray-600">
+                        Built with security in mind to protect your important documents.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- How It Works -->
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">How It Works</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">1</div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-1">Install the application</h4>
+                            <p class="text-gray-600">Download the Filefy Client.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">2</div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-1">Register your Account</h4>
+                            <p class="text-gray-600">Register your Account, after that Log In And You´re Good to Go.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">3</div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-1">Manage Files and Account</h4>
+                            <p class="text-gray-600">(Account) Manage your Account (Files) Download,Upload,Store the Files (also you can promote files in the Profile Tab to the Global Chat).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-8 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 mb-2">Copyright © 2025 Filefy. All rights reserved.</p>
+            <p class="text-gray-400 text-sm">Created by nyreth</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Track downloads
+        const downloadBtn = document.querySelector('.download-btn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+                // You could add analytics here
+                console.log('Download initiated for Filefy v.1.0');
+            });
+        }
+    </script>
+</body>
+</html>
